@@ -193,6 +193,12 @@ h1 {
         gap: 20px; /* Adjust gap for smaller screens */
         margin-bottom: 40px; /* Adjust margin for smaller screens */
     }
+	.short-description {
+		text-align: justify;
+		/* @media (max-width: 1024px) {
+			display:none;
+		} */
+	}
     .hero-blue {
         background-color: var(--blue-100);
         border-radius: 30px;
@@ -327,6 +333,7 @@ h3 {
 		.right-column {
 			flex:1;
 			p {
+				text-align: justify;
 				margin-bottom:20px;
 			}
 		}
