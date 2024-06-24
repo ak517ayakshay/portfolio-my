@@ -37,7 +37,7 @@
             <div class="hero-blue">
                 <div>
                     <h1><small>Hi I'm</small> Akshay Kumar</h1>
-                    <p class="short-description">Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at R.N.S Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.</p>
+                    <p class="short-description">Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at RNS Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.</p>
                     <div class="call-to-action">
                         <a href="./akshay's resume.pdf" class="button black">View Resume</a>
                         <a href="mailto:ak517ay@gmail.com" class="button white">Contact Me</a>
@@ -50,9 +50,16 @@
                             <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
                         </a>
                     </div>
+                    <!-- Microphone Button for Text-to-Speech -->
+                    <div class="tts">
+                        <button id="speakButton">
+                            <img src="./imgs/mic.png" alt="Microphone" style="width:24px;height:24px;">
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+        
         <section id="skills" class="skills container">
             <h2><small>About My</small> Skills</h2>
             <div class="holder-blue">
@@ -75,6 +82,7 @@
                 </div>
             </div>
         </section>
+        <!-- Logos Section -->
         <section class="logos container">
             <div class="marquee">
                 <div class="track">
@@ -87,7 +95,7 @@
                     <img src="./imgs/django.png" width="128" alt="Django" />
                     <img src="./imgs/c++.png" width="128" alt="C++" />
                     <img src="./imgs/canva.png" width="128" alt="Canva" />
-					<img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/html.png" alt="HTML" width="128" />
                     <img src="./imgs/xss.png" alt="CSS" width="128" />
                     <img src="./imgs/mysql.png" width="128" alt="MySQL" />
                     <img src="./imgs/github.jpeg" width="128" alt="GitHub" />
@@ -99,6 +107,7 @@
                 </div>
             </div>
         </section>
+        <!-- Work Experience Section -->
         <section id="experience" class="work-experience container">
             <h2><small>Recent</small> Work Experience</h2>
             <div class="jobs">
@@ -116,6 +125,7 @@
                 </article>
             </div>
         </section>
+        <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <h2 style="text-align: center;"><small>Previous</small> Completed Projects</h2>
             <div class="container">
@@ -123,14 +133,14 @@
                     <div class="project-image">
                         <img src="imgs/1.png" alt="Project 1">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1yYcJRMjqeVcfgEcjV7kEN2c52mbERZUG/view" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Implemented  Video CLASS.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
                         <h3 style="text-align: center;">C.L.A.S.S</h3>
                         <p class="des">Developed a software named C.L.A.S.S (Child Labor Automated Surveillance System) to report instances of child labor.</p>
                         <p style="text-align: center;"><a href="https://github.com/ak517ayakshay/C.L.A.S.S">View on GitHub</a></p>
-                        <p style="text-align: center;"><a href="https://drive.google.com/file/d/1t9SyAdHr-ANuJ6vIyUmuya3vi0_I9FdZ/view">View Idea Video</a></p>
+                        <p style="text-align: center;"><a href="./Untitled video - Made with Clipchamp.mp4">View Idea Video</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -155,7 +165,7 @@
                     <div class="project-image">
                         <img src="imgs/SCHOLATA.png" alt="Scholata Project">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1eaJKeERH6bZIDzDjKHQZmBCrgqgLCZrJ/view" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Scholata Implemented.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
@@ -172,11 +182,12 @@
                 </div>
             </div>
         </section>
+        <!-- Achievements Section -->
         <section id="achievements" class="achievements container">
             <h2><small>My</small> Achievements</h2>
             <ul> 
                 <li>
-                    <strong>Submitted Research Paper through IISC Bengaluru</strong><br>
+                    <strong>Submitted Research Paper through IISC Bengaluru to IIT Kharagpur</strong><br>
                     Submitted Research Paper of C.L.A.S.S to INDICon (IEEE conf. no. 63790), IIT Kharagpur
                 </li>
                 <li>
@@ -185,8 +196,8 @@
                 </li>
                 <li>
                     <strong>Technical Event Runner-up</strong><br>
-                    RNS Institute of Technology<br>
-                    Achieved the runner-up position in a technical event conducted by the college.
+                 
+                    Achieved the runner-up position in a technical event conducted by RNS Institute of Technology
                 </li>
                 <li>
                     <strong>Instructor, Object-Oriented Programming</strong><br>
@@ -196,5 +207,27 @@
             </ul>
         </section>
     </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        document.getElementById('speakButton').addEventListener('click', function() {
+            const text = document.querySelector('.short-description').innerText;
+            const speech = new SpeechSynthesisUtterance(text);
+            speechSynthesis.speak(speech);
+        });
+    </script>
 </body>
 </html>
