@@ -1,177 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Akshay's Portfolio</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./styles.css">
-	<script src="./scripts.js"></script>
-	<link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshay's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
 </head>
 <body>
-	<header>
-		<a href="#" class="logo-holder">
-			<div class="logo">A</div>
-			<div class="logo-text">Akshay's Portfolio</div>
-		</a>
-		<nav>
-			<ul id="menu">
-				<li>
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#skills">Skills</a>
-				</li>
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-				<li>
-					<a href="mailto:ak517ay@gmail.com" class="button">Contact Me</a>
-				</li>
-			</ul>
-			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
-				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
-				</svg>
-			</a>
-		</nav>
-	</header>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">A</div>
+            <div class="logo-text">Akshay's Portfolio</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="mailto:ak517ay@gmail.com" class="button">Contact Me</a></li>
+            </ul>
+            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </a>
+        </nav>
+    </header>
     <hr>
-	<main>
-		<section class="hero container">
-			<div class="hero-blue">
-				<div>
-					<h1><small>Hi I'm</small>
-						Akshay Kumar
-					</h1>
-					<p class="short-description"> 
-						Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at R.N.S Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.
-					</p>
-					<div class="call-to-action">
-						<a href="./akshay's resume.pdf" class="button black">
-							View Resume
-						</a>
-						<a href="mailto:ak517ay@gmail.com" class="button white">
-							Contact Me
-						</a>
-					</div>
-					<div class="social-links">
-						<a href="https://github.com/ak517ayakshay">
-							<img src="./imgs/github.jpeg" alt="GitHub" width="48" />
-						</a>
-						<a href="https://www.linkedin.com/in/akshay-kumar-7a8857255">
-							<img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
-						</a>
-					</div>
-				</div>
-			</div>
-		<hr>
-
-		</section>
-		<section class="logos container">
-			<div class="marquee">
-				<div class="track">
-					<img src="./imgs/html.png" alt="HTML" width="128" />
-					<img src="./imgs/xss.png" alt="CSS" width="128" />
-					<img src="./imgs/mysql.png" width="128" alt="Next JS" />
-					<img src="./imgs/github.jpeg" width="128" alt="Azure" />
-					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
-					<img src="./imgs/python.png" width="128" alt="Python" />
-					<img src="./imgs/django.png" alt="HTML" width="128" />
-                    
-					<img src="./imgs/c++.png" alt="CSS" width="128" />
-					<img src="./imgs/canva.png" alt="CSS" width="128" />
-                     
-					<img src="./imgs/html.png" alt="HTML" width="128" />
-					<img src="./imgs/xss.png" alt="CSS" width="128" />
-					<img src="./imgs/mysql.png" width="128" alt="Next JS" />
-					<img src="./imgs/github.jpeg" width="128" alt="Azure" />
-					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
-					<img src="./imgs/python.png" width="128" alt="Python" />
-					<img src="./imgs/django.png" alt="HTML" width="128" />
-					<img src="./imgs/c++.png" alt="CSS" width="128" />
-                    <img src="./imgs/canva.png" alt="CSS" width="128" />
-				</div>
-                
-			</div>
-            
-		</section>
-		<section id="skills" class="skills container">
-			<h2>
-				<small>About My</small>
-				Skills
-			</h2>
-			<div class="holder-blue">
-				<div class="left-column">
-					
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <div>
+                    <h1><small>Hi I'm</small> Akshay Kumar</h1>
+                    <p class="short-description">Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at R.N.S Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.</p>
+                    <div class="call-to-action">
+                        <a href="./akshay's resume.pdf" class="button black">View Resume</a>
+                        <a href="mailto:ak517ay@gmail.com" class="button white">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ak517ayakshay?tab=repositories">
+                            <img src="./imgs/github.jpeg" alt="GitHub" width="48" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/akshay-kumar-7a8857255">
+                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2><small>About My</small> Skills</h2>
+            <div class="holder-blue">
+                <div class="left-column">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
                         <li>Django</li>
-					    <li>Flask</li>
-						<li>Python</li>
-						<li>C++</li>
-						<li>SQL</li>
-						<li>Git</li>
-						<li>Data Structures and Algorithms</li>
-
-					</ul>
-				</div>
-				<div class="right-column">
-					<h3>A bit about me</h3>
-                    <p>
-					I am Akshay Kumar, the developer behind C.L.A.S.S (Child Labor Automated Surveillance System), which I conceptualized and developed during my internship at the Indian Institute of Science. I have submitted a patent application for Precision-Vision, a project aimed at innovatively measuring human eye power. Alongside these achievements, I maintain a strong academic record with a CGPA of 8.99, demonstrating my commitment to practical innovation and academic excellence.
-
-
-					</p>
-				</div>
-			</div>
-		</section>
-		<section class="work-experience container">
-			<h2>
-				<small>Recent</small>
-				<span>Work Experience</span>
-			</h2>
-			<div class="jobs">
-				<article>
-					<figure>
-						<div>
-							<img src="./imgs/iisc.png" alt="Workplace 1 - Indian Institute of Science" width="100%" />
-							<figcaption>
-								SDE Intern at Indian Institute of Science Bengaluru
-							</figcaption>
-						</div>
-					</figure>
-					<h3>SDE Intern</h3>
-					<div>29-03-2024 to 29-05-2024</div>
-					<p>Worked on the development of C.L.A.S.S(Child labor Automated Surveillance System).</p>
-                    <a href="https://drive.google.com/file/d/1Hmu3cSW8G8KzJnw1XoB6njf5Lu24mEaw/view?usp=drivesdk">View LOR</a>
-				</article>
-            </section>
-				<h2>
-                    <small>
-                        Previous
-                    </small>
-                    Completed Projects
-                </h2>
-			</div>
-		<section class="projects-section">
+                        <li>Flask</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>Data Structures and Algorithms</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h3>A bit about me</h3>
+                    <p>I am Akshay Kumar, the developer behind C.L.A.S.S (Child Labor Automated Surveillance System), which I conceptualized and developed during my internship at the Indian Institute of Science. I have submitted a patent application for Precision-Vision, a project aimed at innovatively measuring human eye power. Alongside these achievements, I maintain a strong academic record with a CGPA of 8.99, demonstrating my commitment to practical innovation and academic excellence.</p>
+                </div>
+            </div>
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/xss.png" alt="CSS" width="128" />
+                    <img src="./imgs/mysql.png" width="128" alt="MySQL" />
+                    <img src="./imgs/github.jpeg" width="128" alt="GitHub" />
+                    <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                    <img src="./imgs/python.png" width="128" alt="Python" />
+                    <img src="./imgs/django.png" width="128" alt="Django" />
+                    <img src="./imgs/c++.png" width="128" alt="C++" />
+                    <img src="./imgs/canva.png" width="128" alt="Canva" />
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+                    <img src="./imgs/xss.png" alt="CSS" width="128" />
+                    <img src="./imgs/mysql.png" width="128" alt="MySQL" />
+                    <img src="./imgs/github.jpeg" width="128" alt="GitHub" />
+                    <img src="./imgs/vscode.png" width="128" alt="VS Code" />
+                    <img src="./imgs/python.png" width="128" alt="Python" />
+                    <img src="./imgs/django.png" width="128" alt="Django" />
+                    <img src="./imgs/c++.png" width="128" alt="C++" />
+                    <img src="./imgs/canva.png" width="128" alt="Canva" />
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="work-experience container">
+            <h2><small>Recent</small> Work Experience</h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img class="iisc" src="./imgs/iisc.png" alt="Workplace 1 - Indian Institute of Science" width="100%" />
+                            <figcaption>SDE Intern at Indian Institute of Science Bengaluru</figcaption>
+                        </div>
+                    </figure>
+                    <h3>SDE Intern at Indian Institute of Science Bengaluru</h3>
+                    <div>29-03-2024 to 29-05-2024</div>
+                    <p>Worked on the development of C.L.A.S.S (Child Labor Automated Surveillance System).</p>
+                    <a href="./Akshay-LOR.pdf" >View LOR</a>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2 style="text-align: center;"><small>Previous</small> Completed Projects</h2>
             <div class="container">
                 <div class="project">
                     <div class="project-image">
                         <img src="imgs/1.png" alt="Project 1">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1yYcJRMjqeVcfgEcjV7kEN2c52mbERZUG/view?usp=drive_link" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Implemented  Video CLASS.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
                         <h3 style="text-align: center;">C.L.A.S.S</h3>
-                        <p>Developed a software named C.L.A.S.S(Child Labor Automated Surveillance System) to report instances of child labor.</p>
-                        <p style="text-align: center;"><a href="https://github.com/ak517ayakshay/C.L.A.S.S" >View on GitHub</a></p>
-                        <p style="text-align: center;"><a href="https://drive.google.com/file/d/1t9SyAdHr-ANuJ6vIyUmuya3vi0_I9FdZ/view?usp=drive_link">View Idea Video</a></p>
+                        <p class="des">Developed a software named C.L.A.S.S (Child Labor Automated Surveillance System) to report instances of child labor.</p>
+                        <p style="text-align: center;"><a href="https://github.com/ak517ayakshay/C.L.A.S.S">View on GitHub</a></p>
+                        <p style="text-align: center;"><a href="./Untitled video - Made with Clipchamp.mp4">View Idea Video</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -183,19 +142,12 @@
                     </div>
                     <div class="project-details">
                         <h3 style="text-align: center;">PRECISION-VISION</h3>
-                        <p class="short-description">
-                            Introducing a pioneering Eye power Testing Software developed with Python and OpenCV.
-                        </p>
+                        <p class="short-description des">Introducing a pioneering Eye power Testing Software developed with Python and OpenCV.</p>
                         <div class="more-content" id="more-content" style="display: none;">
-                            <p>
-                                This advanced algorithm provides personalized and comprehensive eye tests with a user-friendly GUI powered by Tkinter. Authenticated by medical professionals and poised for a patent, it revolutionizes eye care diagnostics, enabling remote tests, early condition detection, and enhanced accessibility for preventive healthcare.
-                                Collaborated with medical professionals to ensure the software's authenticity and relevance in eye care diagnostics.
-                                Applied for patent.
-                            </p>
+                            <p class="des">This advanced algorithm provides personalized and comprehensive eye tests with a user-friendly GUI powered by Tkinter. Authenticated by medical professionals and poised for a patent, it revolutionizes eye care diagnostics, enabling remote tests, early condition detection, and enhanced accessibility for preventive healthcare. Collaborated with medical professionals to ensure the software's authenticity and relevance in eye care diagnostics. Applied for patent.</p>
                         </div>
                         <p style="text-align: center;">
-                            <a href="#" onclick="toggleContent('more-content'); return false;">Read more</a> 
-                            <!-- <a href="https://github.com/ak517ayakshay/C.L.A.S.S">View on GitHub</a> -->
+                            <a href="#" onclick="toggleContent('more-content'); return false;">Read more</a>
                         </p>
                     </div>
                 </div>
@@ -203,40 +155,33 @@
                     <div class="project-image">
                         <img src="imgs/SCHOLATA.png" alt="Scholata Project">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1eaJKeERH6bZIDzDjKHQZmBCrgqgLCZrJ/view?usp=drive_link" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Scholata Implemented.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
                         <h3 style="text-align: center;">SCHOLATA</h3>
-                        <p class="short-description">
-                            Introducing Scholata, a unique fusion of scholarships and data structures.
-                        </p>
+                        <p class="short-description des">Introducing Scholata, a unique fusion of scholarships and data structures.</p>
                         <div class="more-content" id="more-content-scholata" style="display: none;">
-                            <p>
-                                This project optimizes the scholarship application process using advanced linked lists. By collecting basic details, it efficiently directs students to relevant scholarship websites based on their background, simplifying access to deserved opportunities.
-                            </p>
+                            <p class="des">This project optimizes the scholarship application process using advanced linked lists. By collecting basic details, it efficiently directs students to relevant scholarship websites based on their background, simplifying access to deserved opportunities.</p>
                         </div>
                         <p style="text-align: center;">
-                            <a href="#" onclick="toggleContent('more-content-scholata'); return false;">Read more </a>
-                           <p style="text-align: center;"> <a href="https://github.com/ak517ayakshay/project-scholata">View on GitHub</a></p>
+                            <a href="#" onclick="toggleContent('more-content-scholata'); return false;">Read more</a>
+                            <p style="text-align: center;"><a href="https://github.com/ak517ayakshay/project-scholata">View on GitHub</a></p>
                         </p>
                     </div>
                 </div>
-                     
-               
-                
-                
+            </div>
         </section>
         <section id="achievements" class="achievements container">
-            <h2>
-                <small>My</small>
-                Achievements
-            </h2>
-            <ul>
+            <h2><small>My</small> Achievements</h2>
+            <ul> 
                 <li>
-                    <strong>Instructor, Object-Oriented Programming</strong><br>
-                    RNS Institute of Technology<br>
-                    Conducted classes on Object-Oriented Programming for 5th-semester students.
+                    <strong>Submitted Research Paper through IISC Bengaluru</strong><br>
+                    Submitted Research Paper of C.L.A.S.S to INDICon (IEEE conf. no. 63790), IIT Kharagpur
+                </li>
+                <li>
+                    <strong>Patent Application</strong><br>
+                    Filed a patent application for the PRECISION-VISION project.
                 </li>
                 <li>
                     <strong>Technical Event Runner-up</strong><br>
@@ -244,13 +189,12 @@
                     Achieved the runner-up position in a technical event conducted by the college.
                 </li>
                 <li>
-                    <strong>Patent Application</strong><br>
-                    Filed a patent application for the PRECISION-VISION project.
+                    <strong>Instructor, Object-Oriented Programming</strong><br>
+                    RNS Institute of Technology<br>
+                    Conducted classes on Object-Oriented Programming for 5th-semester students.
                 </li>
             </ul>
         </section>
-
-        
-	</main>
+    </main>
 </body>
 </html>
