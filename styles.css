@@ -365,13 +365,19 @@ h3 {
     text-align: justify;
 }
 
+/* Container Styling */
+/* Container Styling */
+/* Container Styling */
+/* Container Styling */
 .work-experience {
     background-color: var(--yellow-100);
     padding: 30px;
     border-radius: 30px;
     margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Job Entries Layout */
 .work-experience .jobs {
     display: flex;
     gap: 30px;
@@ -386,6 +392,7 @@ h3 {
     }
 }
 
+/* Individual Job Card Styling */
 .work-experience article {
     background-color: var(--base-100);
     border-radius: 20px;
@@ -400,38 +407,50 @@ h3 {
     transform: translateY(-10px);
 }
 
+/* Job Title Styling */
 .work-experience article h3 {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 1.5em;
+    color: var(--base-800);
 }
 
+/* Job Date Styling */
 .work-experience article div {
     font-weight: 600;
     margin-bottom: 5px;
     color: var(--base-800);
+    text-align: right;
 }
 
+/* Job Description Styling */
 .work-experience article p {
     margin-bottom: 10px;
+    color: var(--base-600);
 }
 
+/* Figure Styling for Image and Caption */
 .work-experience article figure {
-    width: 60%;
-    padding-top: 56.25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    border-radius: 15px;
-    overflow: hidden;
     margin-bottom: 15px;
+    height: auto;
+}
+
+.work-experience article figure div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .work-experience article figure img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 150px; /* Increased width to make the image bigger */
+    height: auto;
     transition: transform 0.3s ease-out;
+    border-radius: 15px;
 }
 
 .work-experience article figure figcaption {
@@ -447,6 +466,7 @@ h3 {
     transition: opacity 0.3s ease-out;
 }
 
+/* Hover Effects */
 .work-experience article figure:hover img {
     transform: scale(1.05);
 }
@@ -454,6 +474,7 @@ h3 {
 .work-experience article figure:hover figcaption {
     opacity: 1;
 }
+
 
 .projects-section {
     padding: 80px 20px;
