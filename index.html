@@ -37,7 +37,9 @@
             <div class="hero-blue">
                 <div>
                     <h1><small>Hi I'm</small> Akshay Kumar</h1>
-                    <p class="short-description">Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at RNS Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.</p>
+                    <p class="short-description">
+                        Ex-Intern at the Indian Institute of Science Bengaluru, pursuing a Bachelor of Engineering in Computer Science at RNS Institute of Technology Bengaluru. Skillful in Python, Django, Flask, MySQL, C++, HTML, CSS, and data structures. Specializing in software development and web technologies with practical project experience.
+                    </p>
                     <div class="call-to-action">
                         <a href="./akshay's resume.pdf" class="button black">View Resume</a>
                         <a href="mailto:ak517ay@gmail.com" class="button white">Contact Me</a>
@@ -50,11 +52,17 @@
                             <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
                         </a>
                     </div>
-                    <!-- Microphone Button for Text-to-Speech -->
-                    <div class="tts">
-                        <button id="speakButton">
-                            <img src="./imgs/mic.png" alt="Microphone" style="width:24px;height:24px;">
-                        </button>
+                    <!-- Audio Player for Text-to-Speech -->
+                    <div class="audio-player-container">
+                        <audio id="audio" src="./texttospeech.mp3"></audio>
+                        <div class="audio-player">
+                            <button id="play-pause" class="play"></button>
+                            <div class="progress-container">
+                                <span id="current-time">00:00</span>
+                                <input type="range" id="seek-bar" value="0">
+                                <span id="duration">00:00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +81,7 @@
                         <li>C++</li>
                         <li>SQL</li>
                         <li>Git</li>
-                        <li>Data Structures and Algorithms</li>
+                        <li>Data Structures</li>
                     </ul>
                 </div>
                 <div class="right-column">
@@ -114,17 +122,18 @@
                 <article>
                     <figure>
                         <div>
-                            <img class="iisc" src="./imgs/iisc.png" alt="Workplace 1 - Indian Institute of Science" width="100%" />
+                            <img class="iisc" src="./imgs/iisc.png" alt="Workplace 1 - Indian Institute of Science" />
                             <figcaption>SDE Intern at Indian Institute of Science Bengaluru</figcaption>
                         </div>
                     </figure>
                     <h3>SDE Intern at Indian Institute of Science Bengaluru</h3>
-                    <div style="text-align: right;"><i>(29-03-2024 to 29-05-2024)</i></div>
+                    <div style="text-align: right;"><i>29-03-2024 to 29-05-2024</i></div>
                     <p class="des">Worked on the development of C.L.A.S.S (Child Labor Automated Surveillance System).</p>
-                    <a href="./Akshay-LOR.pdf" >View LOR</a>
+                    <a href="./Akshay-LOR.pdf">View LOR</a>
                 </article>
             </div>
         </section>
+        
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <h2 style="text-align: center;"><small>Previous</small> Completed Projects</h2>
@@ -133,14 +142,14 @@
                     <div class="project-image">
                         <img src="imgs/1.png" alt="Project 1">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1yYcJRMjqeVcfgEcjV7kEN2c52mbERZUG/view?usp=drive_link" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Implemented  Video CLASS.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
                         <h3 style="text-align: center;">C.L.A.S.S</h3>
                         <p class="des">Developed a software named C.L.A.S.S (Child Labor Automated Surveillance System) to report instances of child labor.</p>
                         <p style="text-align: center;"><a href="https://github.com/ak517ayakshay/C.L.A.S.S">View on GitHub</a></p>
-                        <p style="text-align: center;"><a href="https://drive.google.com/file/d/1t9SyAdHr-ANuJ6vIyUmuya3vi0_I9FdZ/view">View Idea Video</a></p>
+                        <p style="text-align: center;"><a href="./Untitled video - Made with Clipchamp.mp4">View Idea Video</a></p>
                     </div>
                 </div>
                 <div class="project">
@@ -165,7 +174,7 @@
                     <div class="project-image">
                         <img src="imgs/SCHOLATA.png" alt="Scholata Project">
                         <div class="overlay">
-                            <a href="https://drive.google.com/file/d/1eaJKeERH6bZIDzDjKHQZmBCrgqgLCZrJ/view" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                            <a href="./Scholata Implemented.mp4" class="video-link" target="_blank" rel="noopener noreferrer">Watch Video</a>
                         </div>
                     </div>
                     <div class="project-details">
@@ -201,8 +210,8 @@
                 </li>
                 <li>
                     <strong>Instructor, Object-Oriented Programming</strong><br>
-                    
-                    Conducted classes on Object-Oriented Programming for 5th-semester students at RNS Institute of Technology
+                    RNS Institute of Technology<br>
+                    Conducted classes on Object-Oriented Programming for 5th-semester students.
                 </li>
             </ul>
         </section>
