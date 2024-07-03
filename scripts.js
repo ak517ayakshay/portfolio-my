@@ -2,6 +2,7 @@ function toggleMobileMenu(){
 	document.getElementById("menu").classList.toggle("active");
 }
 function toggleContent(id) {
+	//d
     var moreContent = document.getElementById(id);
     if (moreContent.style.display === "none") {
         moreContent.style.display = "block";
